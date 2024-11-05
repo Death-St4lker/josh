@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Day Celebration 2024</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f39c12;
+            --text-color: #333;
+            --bg-color: #FFFFED;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: yellow;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                60deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.1) 10px,
+                rgba(255,255,255,0.1) 20px
+            );
+            animation: move-background 20s linear infinite;
+            z-index: 1;
+        }
+        @keyframes move-background {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        h1, h2, h3 {
+            position: relative;
+            z-index: 2;
+        }
+        nav {
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        .intro {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .event {
+            margin-bottom: 50px;
+            position: relative;
+        }
+        .event-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .video-container video {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+        video::-webkit-media-controls-panel {
+            background-color: rgba(74, 144, 226, 0.7);
+        }
+        video::-webkit-media-controls-play-button {
+            background-color: rgba(243, 156, 18, 0.8);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Day Celebration 2024</h1>
+    </header>
+    <div class="container">
+        <section id="events">
+            <div class="event">
+                <div class="event-content">
+                    <div class="video-container">
+                        <video controls preload="metadata" poster="video1.mp4">
+                            <source src="ccs.video/ccsday.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p class="caption">CCS DAY OPENING</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-content">
+                    <div class="video-container">
+                        <video controls preload="metadata" poster="video2.mp4">
+                            <source src="ccs.video/laparoza.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p>La Poroza 2024 and Campus Icon showcase the incredible talents of our students.</p>
+                    <p class="caption">Dazzling performances light up the stage.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-content">
+                    <div class="video-container">
+                        <video controls preload="metadata" poster="video3.mp4">
+                            <source src="ccs.video/awarding.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p class="caption">The awarding ceremony.</p>
+                </div>
+            </div>
+        </section>
+        <section id="reflection" class="intro">
+            <h2>Closing Remarks</h2>
+            <p>As the College Day 2024 comes to an end, we reflect on the incredible display of talent, intelligence, and camaraderie shown by our students. This day not only celebrates our academic achievements but also strengthens the bonds within our college community. We look forward to many more successful events in the future!</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 College Day Celebration. All rights reserved
